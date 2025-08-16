@@ -27,7 +27,11 @@ const obtain = async (url, is_local=false) => {
 const routing = async () => {
     if (payload) {
       resp = await obtain(`contents/${payload}.md`);
+      document.querySelector('.meta').innerText = DOMPurify.sanitize(payload);  // Double safety with innerText (!innerHTML) && DOMPurify!
+      document.querySelector('.home').innerText = '';
     } else {
+      document.querySelector('.homeIcon').remove();
       resp = await obtain('/table_of_contents.md');
     }; document.querySelector('#content').innerHTML = render(resp);
 }; window.onhashchange = () => {location.reload()}; after_dom(routing);
+

@@ -1,5 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head><title>GANJ4 5T0R3</title></head>
-<body><h1>200</h1></body>
+<html color-mode="user">
+<!-- Add styles. -->
+  <head>
+    <title>GANJ4 5T0R3 - Blog</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+  </head>
+  <body>
+      <nav>
+        <a href="/"><img alt="Logo" src="https://ganja-store.github.io/purple-cannabis-bud.png" height="70"></a>
+        <ul>
+          <li class="meta">Table of Contents</li>
+          <li><a onclick="window.history.go(-1)" style="cursor: pointer;">Back</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a onclick="window.history.go(1)" style="cursor: pointer;">Forward</a></li>
+        </ul>
+      </nav>
+      <div id="app">
+        <!-- TODO: Add navigation based off window.history.go(-1); window.history.go(1);-->
+        <main id="content"></main>
+      </div>
+    </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.5/purify.min.js" integrity="sha512-/CUtA84sWWqWEBejNrrtWa7Yc4cth3Ome2ymvCKOo9YcZ4sh98tndUy4LutE2xGcAgD4fyz16y+gSyJdGCB5ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./main.js"></script>
 </html>

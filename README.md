@@ -1,2 +1,1 @@
-# website
-Our Website
+# https://ganja-store.github.io/blog
